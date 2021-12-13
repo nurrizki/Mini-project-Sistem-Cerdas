@@ -96,7 +96,7 @@ async function predict() {
         const classPrediction =
             prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             // prediction[i].probability.toFixed(2)
-        // labelContainer.childNodes[i].innerHTML = classPrediction;
+        labelContainer.childNodes[i].innerHTML = classPrediction;
 
         // menampilkan hasil
         if (prediction[i].probability.toFixed(2) >= 0.5) {
