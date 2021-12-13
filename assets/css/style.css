@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.headerDiv{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif !important;
+    width: 100%;
+}
+
+#arrowAnim {
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 1.5vw solid;
+    border-color: #ECB365 transparent transparent #ECB365;
+    transform: rotate(-135deg);
+}
+  
+  
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+}
+  
+.delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+}
+.delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+}
+.delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+}
+  
+@-webkit-keyframes slide {
+      0% { opacity:0; transform: translateY(-5vw); }  
+     20% { opacity:1; transform: translateY(-3vw); } 
+     80% { opacity:1; transform: translateY(-1vw); }  
+    100% { opacity:0; transform: translateY(2vw); } 
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateY(-5vw); }  
+    20% { opacity:1; transform: translateY(-3vw); } 
+    80% { opacity:1; transform: translateY(-1vw); }  
+   100% { opacity:0; transform: translateY(2vw); } 
+}
+
+@media only screen and (max-width: 768px) {
+    .arrow {
+        width: 5vw;
+        height: 5vw;
+        border: 2.5vw solid;
+        border-color: #ECB365 transparent transparent #ECB365;
+        transform: rotate(-135deg);
+    }   
+}
